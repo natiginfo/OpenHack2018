@@ -38,7 +38,8 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     }
 
     @OnClick(R.id.btn_login)
-    void loginButtonClicked() {
+    public void loginButtonClicked() {
+        Log.d(TAG, "loginButtonClicked: ");
         presenter.sendVerificationSms(phoneEditText.getText().toString(),
                 usernameEditText.getText().toString());
     }

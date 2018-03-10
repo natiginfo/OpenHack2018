@@ -42,6 +42,7 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:' + rootExt.butterknifeVer
     annotationProcessor 'com.jakewharton:butterknife-compiler:' + rootExt.butterknifeVer
+    kapt 'com.jakewharton:butterknife-compiler:' + rootExt.butterknifeVer
 
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'org.greenrobot:eventbus:3.1.1'
@@ -55,3 +56,5 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:' + rootExt.daggerVer
     kapt 'com.google.dagger:dagger-compiler:' + rootExt.daggerVer
 }
+
+apply plugin: 'com.google.gms.google-services'
