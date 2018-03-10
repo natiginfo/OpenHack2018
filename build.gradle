@@ -25,3 +25,11 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    buildToolsVer='27.0.3'
+    supportLibVer='27.0.2'
+    firebaseVer='11.8.0'
+    butterknifeVer='8.8.1'
+    daggerVer='2.14.1'
+}
