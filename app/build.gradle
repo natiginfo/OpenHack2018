@@ -55,6 +55,10 @@ dependencies {
     implementation 'com.google.dagger:dagger:' + rootExt.daggerVer
     annotationProcessor 'com.google.dagger:dagger-compiler:' + rootExt.daggerVer
     kapt 'com.google.dagger:dagger-compiler:' + rootExt.daggerVer
+
+    implementation "android.arch.lifecycle:livedata:1.1.0"
+
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
 }
 
 apply plugin: 'com.google.gms.google-services'
