@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,7 +51,12 @@ class TopicsFragment : BaseFragment() {
 
         topicsList = arrayOf(topic1, topic2, topic3, topic4).toList()
 
-        val checkBoxAdapter = TopicsAdapter(topicsList)
+        val checkBoxAdapter = TopicsAdapter(topicsList, object : TopicsAdapter.OnItemClickedListener {
+
+            override fun onClick(topic: Topic) {
+                Log.d("TopicsFragment", topic.title)
+            }
+        })
 
         topicsRecyclerView.adapter = checkBoxAdapter
         return currentView

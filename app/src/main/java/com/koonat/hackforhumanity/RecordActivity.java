@@ -21,6 +21,10 @@ import com.koonat.hackforhumanity.audio.AudioRecorder;
 import com.koonat.hackforhumanity.audio.internal.AudioPlayerImpl;
 import com.koonat.hackforhumanity.audio.internal.AudioRecorderImpl;
 import com.koonat.hackforhumanity.common.base.BaseActivity;
+import com.koonat.hackforhumanity.topics.Topic;
+import com.koonat.hackforhumanity.topics.TopicsAdapter;
+
+import org.jetbrains.annotations.NotNull;
 
 public class RecordActivity extends BaseActivity {
     private static final String TAG = "RecordActivity";
