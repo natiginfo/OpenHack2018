@@ -14,6 +14,8 @@
         android:layout_height="64dp"
         android:layout_above="@+id/title"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:src="@drawable/ic_language"
         android:tint="@android:color/white"/>
 
@@ -24,6 +26,8 @@
         android:layout_above="@+id/center"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:fontFamily="@font/quicksand"
         android:gravity="center"
         android:text="Choose your languages"
@@ -35,6 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:fontFamily="@font/source_sans_pro"
         android:text="@string/choose_language_description"/>
 
@@ -44,6 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/center"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/source_sans_pro"
         android:text="I can speak..."/>
@@ -52,6 +60,7 @@
         android:id="@+id/languagesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
         android:layout_below="@+id/txt_selection_title"
         android:layout_marginTop="16dp"/>
 

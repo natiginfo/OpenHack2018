@@ -8,6 +8,8 @@ import butterknife.ButterKnife
 import com.koonat.hackforhumanity.R
 import com.koonat.hackforhumanity.common.base.BaseActivity
 import android.support.v7.widget.LinearLayoutManager
+import butterknife.OnClick
+import com.koonat.hackforhumanity.country.ChooseCountryActivity
 
 
 /**
@@ -32,5 +34,11 @@ class ChooseLanguageActivity : BaseActivity() {
         val checkBoxAdapter = CheckBoxAdapter(languagesList.toList())
 
         recyclerView.adapter = checkBoxAdapter
+    }
+
+    @OnClick(R.id.btn_next)
+    fun onNextClicked() {
+        startActivity(ChooseCountryActivity().newIntent(this))
+        finish()
     }
 }
