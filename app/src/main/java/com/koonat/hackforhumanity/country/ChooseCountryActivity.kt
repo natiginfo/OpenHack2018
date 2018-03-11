@@ -6,6 +6,8 @@ import android.support.v7.widget.RecyclerView
 import butterknife.BindArray
 import butterknife.BindView
 import butterknife.ButterKnife
+import butterknife.OnClick
+import com.koonat.hackforhumanity.home.HomeActivity
 import com.koonat.hackforhumanity.R
 import com.koonat.hackforhumanity.common.base.BaseActivity
 
@@ -30,5 +32,11 @@ class ChooseCountryActivity : BaseActivity() {
         val checkBoxAdapter = CountryAdapter(countries.toList())
 
         recyclerView.adapter = checkBoxAdapter
+    }
+
+    @OnClick(R.id.btn_next)
+    fun onNextClicked() {
+        startActivity(HomeActivity().newIntent(this))
+        finish()
     }
 }

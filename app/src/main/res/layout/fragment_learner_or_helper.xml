@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fa74fc"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/first_bottom"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/img_ineedhelp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_above="@+id/desc_1"
+                android:src="@drawable/ic_ineedhelp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/desc_1"
+                android:layout_toRightOf="@+id/img_ineedhelp"
+                android:fontFamily="@font/quicksand"
+                android:text="I need help"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/desc_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="Find answers for your questions"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#9c48a6"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/top_ear"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="Helpful tutorials with videos and images"/>
+
+            <ImageView
+                android:id="@+id/top_ear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_ear"
+                android:tint="@android:color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#f8bd30"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/second_bottom"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/img_icanhelp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_above="@+id/desc_2"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_icanhelp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/desc_2"
+                android:layout_toRightOf="@+id/img_icanhelp"
+                android:fontFamily="@font/quicksand"
+                android:text="I can help"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/desc_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="Find answers for your questions"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#e1ac4f"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/bottom_ear"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="Register as volunteer helper"/>
+
+            <ImageView
+                android:id="@+id/bottom_ear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_ear"
+                android:tint="@android:color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

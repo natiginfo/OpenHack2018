@@ -28,8 +28,7 @@
             android:name=".RecordActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
+            android:name=".home.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

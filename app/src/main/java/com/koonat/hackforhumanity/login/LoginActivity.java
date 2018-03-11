@@ -25,7 +25,6 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     @BindView(R.id.login_view) ConstraintLayout loginHolder;
     @BindView(R.id.progressBar) ProgressBar progressBar;
     @BindView(R.id.edit_phone) EditText phoneEditText;
-    @BindView(R.id.edit_username) EditText usernameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +39,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     @OnClick(R.id.btn_login)
     public void loginButtonClicked() {
         Log.d(TAG, "loginButtonClicked: ");
-        presenter.sendVerificationSms(phoneEditText.getText().toString(),
-                usernameEditText.getText().toString());
+        presenter.sendVerificationSms(phoneEditText.getText().toString());
     }
 
     @Override

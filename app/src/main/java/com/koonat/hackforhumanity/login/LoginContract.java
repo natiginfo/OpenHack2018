@@ -10,7 +10,7 @@ import com.koonat.hackforhumanity.common.base.mvp.BaseView;
 
 class LoginContract {
     interface Presenter extends BasePresenter {
-        void sendVerificationSms(String phone, String nickname);
+        void sendVerificationSms(String phone);
     }
 
     interface View extends BaseView<Presenter> {
