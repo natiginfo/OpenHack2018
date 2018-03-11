@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:background="#fabf58">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_language"
+        android:tint="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="Choose your languages"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/choose_language_description"/>
+
+    <TextView
+        android:id="@+id/txt_selection_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="I can speak..."/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/languagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_selection_title"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#d5a745"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Next"
+        android:textAllCaps="false"/>
+</RelativeLayout>
