@@ -17,8 +17,10 @@ import com.koonat.hackforhumanity.common.base.BaseFragment
  */
 class TopicsFragment : BaseFragment() {
     lateinit var currentView: View
+
     @BindView(R.id.topicsRecyclerView)
     lateinit var topicsRecyclerView: RecyclerView
+
     lateinit var topicsList: List<Topic>
 
     override fun onCreateView(inflater: LayoutInflater,
@@ -30,10 +32,21 @@ class TopicsFragment : BaseFragment() {
         val recyclerLayoutManager = LinearLayoutManager(context)
         topicsRecyclerView.layoutManager = recyclerLayoutManager
 
-        var topic1 = Topic("Money & Banking", resources.getDrawable(R.drawable.ic_bank), Color.parseColor("#7097fc"))
-        var topic2 = Topic("Internet & Apps", resources.getDrawable(R.drawable.ic_globe), Color.parseColor("#816efb"))
-        var topic3 = Topic("Smartphones", resources.getDrawable(R.drawable.ic_phone), Color.parseColor("#b173fc"))
-        var topic4 = Topic("Health & Hospital", resources.getDrawable(R.drawable.ic_home), Color.parseColor("#73d5fd"))
+        val topic1 = Topic("Money & Banking",
+                resources.getDrawable(R.drawable.ic_bank),
+                Color.parseColor("#7097fc"))
+
+        val topic2 = Topic("Internet & Apps",
+                resources.getDrawable(R.drawable.ic_globe),
+                Color.parseColor("#816efb"))
+
+        val topic3 = Topic("Smartphones",
+                resources.getDrawable(R.drawable.ic_phone),
+                Color.parseColor("#b173fc"))
+
+        val topic4 = Topic("Health & Hospital",
+                resources.getDrawable(R.drawable.ic_home),
+                Color.parseColor("#73d5fd"))
 
         topicsList = arrayOf(topic1, topic2, topic3, topic4).toList()
 
