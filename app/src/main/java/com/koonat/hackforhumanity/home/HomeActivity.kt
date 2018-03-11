@@ -19,7 +19,6 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.home_fragment_holder, HomeFragment.newInstance())
-        fragmentTransaction.addToBackStack("helper_or_learner")
         fragmentTransaction.commit()
 
         val toggle = ActionBarDrawerToggle(

@@ -10,5 +10,6 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         startActivity(ChooseLanguageActivity().newIntent(this))
+        finish()
     }
 }
